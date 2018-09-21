@@ -1,17 +1,104 @@
-#home {
-  background-color: #D23333;
-  color: white;
+body {
+  background: #f5d4cc;
   height: 100vh;
+  color: #f5d4cc;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: "HK Grotesk";
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  p {
-    margin-top: 1.5em;
+  h1{
+    font-size: 60px;
+    margin: 0;
   }
-  a {
-    color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 16px;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+#home-title{
+  position: relative;
+  display:flex;
+  padding-bottom: 150px;
+  width: 916px;
+}
+
+#welcome{
+  position: absolute;
+  right: 666px;
+}
+#to{
+  position: absolute;
+  right: 589px;
+}
+
+#day{
+  position: absolute;
+  right: 477px;
+}
+
+#one{
+  position: absolute;
+  right: 362px;
+}
+
+#of{
+  position: absolute;
+  right: 288px;
+}
+
+#happiness{
+  position: absolute;
+  right: 0;
+}
+
+#s{
+  visibility: hidden;
+  position: absolute;
+  right: 466px;
+}
+
+#until{
+  visibility: hidden;
+  position: absolute;
+  right: 430px;
+}
+
+#not{
+  @extend #welcome;
+  visibility: hidden;
+}
+
+#number_of_days{
+  visibility: hidden;
+  position: absolute;
+  right: 700px;
+  letter-spacing: -5px;
+  padding-right: 8px;
+}
+
+#day_one_of_happiness{
+  top: 60px;
+  right: 128px;
+  position: absolute;
+  visibility: hidden;
+}
+
+#maxkraanen{
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  font-size: 32px;
+  a{
+    color: #f5d4cc;
+    text-decoration: none;
+  }
+  &:hover{
+  transition: all .2s ease-in-out;
+    transform: scale(.9)
   }
 }

@@ -20,3 +20,10 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+# Reload the browser automatically whenever files change
+configure :development do
+  activate :livereload
+end
+
+set :fonts_dir,  'fonts'
