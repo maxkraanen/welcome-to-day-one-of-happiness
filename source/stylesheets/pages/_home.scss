@@ -8,6 +8,9 @@ body {
   justify-content: center;
   align-items: center;
   h1{
+    @media (max-width: $screen-sm-max){
+      font-size: 45px;
+    }
     font-size: 60px;
     margin: 0;
   }
@@ -20,6 +23,9 @@ body {
 
 
 #home-title{
+  @media (max-width: $screen-sm-max){
+    width: 675px;
+  }
   position: relative;
   display:flex;
   padding-bottom: 150px;
@@ -27,25 +33,40 @@ body {
 }
 
 #welcome{
+  @media (max-width: $screen-sm-max){
+    right: 497px;
+  }
   position: absolute;
   right: 666px;
 }
 #to{
+  @media (max-width: $screen-sm-max){
+    right: 440px;
+  }
   position: absolute;
   right: 589px;
 }
 
 #day{
+  @media (max-width: $screen-sm-max){
+    right: 357px;
+  }
   position: absolute;
   right: 477px;
 }
 
 #one{
+  @media (max-width: $screen-sm-max){
+    right: 271px;
+  }
   position: absolute;
   right: 362px;
 }
 
 #of{
+  @media (max-width: $screen-sm-max){
+    right: 217px;
+  }
   position: absolute;
   right: 288px;
 }
@@ -56,12 +77,18 @@ body {
 }
 
 #s{
+  @media (max-width: $screen-sm-max){
+    right: 346px;
+  }
   visibility: hidden;
   position: absolute;
   right: 466px;
 }
 
 #until{
+  @media (max-width: $screen-sm-max){
+    right: 314px;
+  }
   visibility: hidden;
   position: absolute;
   right: 430px;
@@ -73,14 +100,21 @@ body {
 }
 
 #number_of_days{
+  @media (max-width: $screen-sm-max){
+    right: 520px;
+  }
   visibility: hidden;
   position: absolute;
   right: 700px;
-  letter-spacing: -5px;
-  padding-right: 8px;
+  letter-spacing: -3px;
+  padding-right: 4px;
 }
 
 #day_one_of_happiness{
+  @media (max-width: $screen-sm-max){
+    top: 45px;
+    right: 90px;
+  }
   top: 60px;
   right: 128px;
   position: absolute;
@@ -93,12 +127,15 @@ body {
   top: 0;
   right: 40px;
   font-size: 32px;
+  @media (max-width: $screen-sm-max){
+    font-size: 28px;
+  }
   a{
     color: #f5d4cc;
     text-decoration: none;
   }
   &:hover{
   transition: all .2s ease-in-out;
-    transform: scale(.9)
+    transform: scale(.99)
   }
 }

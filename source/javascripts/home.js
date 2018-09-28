@@ -2,17 +2,30 @@
 
 
 $( document ).ready(function() {
-  hideTitle()
-  showNot()
-  showToDay()
-  moveToDay()
-  hideNotTo()
-  showS()
-  showNumberOfDays()
-  moveDays()
-  showUntil()
-  showDayOneOfHappiness()
-  showName()
+  // run test on initial page load
+  checkSize();
+
+  function checkSize(){
+        hideTitle()
+        showNot()
+        showToDay()
+        hideNotTo()
+        showS()
+        showNumberOfDays()
+        showUntil()
+        showDayOneOfHappiness()
+        showName()
+      if ($("#home-title").css("width") == "916px" ){
+          moveToDay()
+          moveDays()
+      } else if ($("#home-title").css("width") == "675px" ) {
+          moveToDayMD()
+          moveDaysMD()
+      } else {
+        console.log('hello')
+      }
+  }
+
 
   function hideTitle() {
     setTimeout(function() {
@@ -82,6 +95,27 @@ $( document ).ready(function() {
     $("#maxkraanen").css('visibility','visible').hide().delay(13000).fadeIn(800);
   }
 
+  function moveToDayMD(){
+    setTimeout(function() {
+      $( "#day" ).animate({
+        left: "-=10"
+      }, 500, function() {
+      });
+    },5000);
+  }
+
+  function moveDaysMD(){
+    setTimeout(function() {
+      $( "#day" ).animate({
+        left: "-=71"
+      }, 1500, function() {
+      });
+      $( "#s" ).animate({
+        left: "-=71"
+      }, 1900, function() {
+      });
+    },9100);
+  }
 
 });
 
