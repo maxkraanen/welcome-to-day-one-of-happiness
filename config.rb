@@ -16,6 +16,7 @@ configure :build do
   set :relative_links, true
 end
 
+
 activate :deploy do |deploy|
   deploy.build_before    = true
   deploy.deploy_method   = :ftp
