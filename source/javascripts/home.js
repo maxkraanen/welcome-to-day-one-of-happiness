@@ -21,8 +21,12 @@ $( document ).ready(function() {
       } else if ($("#home-title").css("width") == "675px" ) {
           moveToDayMD()
           moveDaysMD()
+        } else if ($("#home-title").css("width") == "489px" ) {
+          moveToDaySM()
+          moveDaysSM()
       } else {
-        console.log('hello')
+        moveToDayXS()
+        moveDaysXS()
       }
   }
 
@@ -112,6 +116,50 @@ $( document ).ready(function() {
       });
       $( "#s" ).animate({
         left: "-=71"
+      }, 1900, function() {
+      });
+    },9100);
+  }
+
+  function moveToDaySM(){
+    setTimeout(function() {
+      $( "#day" ).animate({
+        left: "-=9"
+      }, 500, function() {
+      });
+    },5000);
+  }
+
+  function moveDaysSM(){
+    setTimeout(function() {
+      $( "#day" ).animate({
+        left: "-=71"
+      }, 1500, function() {
+      });
+      $( "#s" ).animate({
+        left: "-=71"
+      }, 1900, function() {
+      });
+    },9100);
+  }
+
+  function moveToDayXS(){
+    setTimeout(function() {
+      $( "#day" ).animate({
+        left: "-=6"
+      }, 500, function() {
+      });
+    },5000);
+  }
+
+  function moveDaysXS(){
+    setTimeout(function() {
+      $( "#day" ).animate({
+        left: "-=28"
+      }, 1500, function() {
+      });
+      $( "#s" ).animate({
+        left: "-=28"
       }, 1900, function() {
       });
     },9100);

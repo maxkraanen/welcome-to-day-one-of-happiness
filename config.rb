@@ -17,13 +17,19 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.deploy_method = :git
+  deploy.build_before    = true
+  deploy.deploy_method   = :ftp
+  deploy.host            = 'ftp.welcometodayoneofhappiness.com'
+  deploy.path            = '/domains/welcometodayoneofhappiness.com/public_html'
+  deploy.user            = 'u9657p33621'
+  deploy.password        = 'oIpJGa2X'
 end
 
+
+
 # Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-end
+# configure :development do
+#   activate :livereload
+# end
 
 set :fonts_dir,  'fonts'

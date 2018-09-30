@@ -11,6 +11,16 @@ body {
     @media (max-width: $screen-sm-max){
       font-size: 45px;
     }
+    @media (max-width: $screen-xs-max){
+      font-size: 32px;
+    }
+    @media (max-width: 550px){
+      font-size: 18px;
+      letter-spacing: 1px;
+      // text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -1px black;
+      // color: black;
+      // text-shadow: none;
+    }
     font-size: 60px;
     margin: 0;
   }
@@ -26,6 +36,13 @@ body {
   @media (max-width: $screen-sm-max){
     width: 675px;
   }
+  @media (max-width: $screen-xs-max){
+    width: 489px;
+  }
+  @media (max-width: 550px){
+    width: 306px;
+    padding-bottom: 100px;
+  }
   position: relative;
   display:flex;
   padding-bottom: 150px;
@@ -36,12 +53,24 @@ body {
   @media (max-width: $screen-sm-max){
     right: 497px;
   }
+  @media (max-width: $screen-xs-max){
+    right: 362px;
+  }
+  @media (max-width: 550px){
+    right: 227px;
+  }
   position: absolute;
   right: 666px;
 }
 #to{
   @media (max-width: $screen-sm-max){
     right: 440px;
+  }
+  @media (max-width: $screen-xs-max){
+    right: 319px;
+  }
+  @media (max-width: 550px){
+    right: 200px;
   }
   position: absolute;
   right: 589px;
@@ -51,6 +80,12 @@ body {
   @media (max-width: $screen-sm-max){
     right: 357px;
   }
+  @media (max-width: $screen-xs-max){
+    right: 258px;
+  }
+  @media (max-width: 550px){
+    right: 162px;
+  }
   position: absolute;
   right: 477px;
 }
@@ -59,6 +94,12 @@ body {
   @media (max-width: $screen-sm-max){
     right: 271px;
   }
+  @media (max-width: $screen-xs-max){
+    right: 194px;
+  }
+  @media (max-width: 550px){
+    right: 122px;
+  }
   position: absolute;
   right: 362px;
 }
@@ -66,6 +107,12 @@ body {
 #of{
   @media (max-width: $screen-sm-max){
     right: 217px;
+  }
+  @media (max-width: $screen-xs-max){
+    right: 155px;
+  }
+  @media (max-width: 550px){
+    right: 96px;
   }
   position: absolute;
   right: 288px;
@@ -80,6 +127,12 @@ body {
   @media (max-width: $screen-sm-max){
     right: 346px;
   }
+  @media (max-width: $screen-xs-max){
+    right: 252px;
+  }
+  @media (max-width: 550px){
+    right: 159px;
+  }
   visibility: hidden;
   position: absolute;
   right: 466px;
@@ -88,6 +141,12 @@ body {
 #until{
   @media (max-width: $screen-sm-max){
     right: 314px;
+  }
+  @media (max-width: $screen-xs-max){
+    right: 248px;
+  }
+  @media (max-width: 550px){
+    right: 138px;
   }
   visibility: hidden;
   position: absolute;
@@ -103,10 +162,16 @@ body {
   @media (max-width: $screen-sm-max){
     right: 520px;
   }
+  @media (max-width: $screen-xs-max){
+    right: 395px;
+  }
+  @media (max-width: 550px){
+    right: 231px;
+  }
   visibility: hidden;
   position: absolute;
   right: 700px;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
   padding-right: 4px;
 }
 
@@ -114,6 +179,13 @@ body {
   @media (max-width: $screen-sm-max){
     top: 45px;
     right: 90px;
+  }
+  @media (max-width: $screen-xs-max){
+    top: 34px;
+  }
+  @media (max-width: 550px){
+    right: 39px;
+    top: 23px;
   }
   top: 60px;
   right: 128px;
@@ -130,12 +202,21 @@ body {
   @media (max-width: $screen-sm-max){
     font-size: 28px;
   }
+  @media (max-width: $screen-xs-max){
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+  @media (max-width: 550px){
+   font-size: 15px;
+   right: 20px;
+   letter-spacing: .3px;
+  }
   a{
     color: #f5d4cc;
     text-decoration: none;
   }
   &:hover{
-  transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
     transform: scale(.99)
   }
 }
