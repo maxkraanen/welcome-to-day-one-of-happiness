@@ -22,8 +22,8 @@ activate :deploy do |deploy|
   deploy.deploy_method   = :ftp
   deploy.host            = 'ftp.welcometodayoneofhappiness.com'
   deploy.path            = '/domains/welcometodayoneofhappiness.com/public_html'
-  deploy.user            = DEPLOY_USERNAME
-  deploy.password        = DEPLOY_PASSWORD
+  deploy.user            = ENV['DEPLOY_USERNAME']
+  deploy.password        = ENV['DEPLOY_PASSWORD']
 end
 
 
