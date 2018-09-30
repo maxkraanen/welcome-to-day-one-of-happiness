@@ -3,4 +3,4 @@
 .DS_Store
 .sass-cache
 build/
-config.rb
+.env
